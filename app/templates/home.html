@@ -1,0 +1,16 @@
+{%extends "layout.html"%}
+{%block content%}
+<header>
+  <div>
+    <h1>Hi Flask</h1>
+    <ul>
+      <li><a href="{{ url_for('home') }}">home</a></li>
+      <li><a href="{{ url_for('about') }}">about</a></li>
+    </ul>
+  </div>
+</header>
+<video poster="../static/media/clouds.mp4" id="bgvid" playsinline autoplay muted loop>
+  <source src="../static/media/clouds.mp4" type="video/webm">
+  <source src="../static/media/clouds.mp4" type="video/mp4">
+</video>
+{%endblock%}
